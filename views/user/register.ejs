@@ -1,0 +1,36 @@
+<%layout("/layout/boilerPlate")%>
+<form action="/register" method="POST" class="needs-validation" novalidate>
+  <div class="mb-3">
+    <label class="form-label" for="username">Enter Username</label>
+    <input
+      class="form-control"
+      type="text"
+      id="username"
+      name="username"
+      required
+    />
+    <div class="valid-feedback">looks good</div>
+    <div class="invalid-feedback">Not good</div>
+  </div>
+  <div class="mb-3">
+    <label class="form-label" for="email">Enter Email</label>
+    <input class="form-control" type="email" id="email" name="email" required />
+    <div class="valid-feedback">looks good</div>
+    <div class="invalid-feedback">Not good</div>
+  </div>
+  <div class="mb-3">
+    <label class="form-label" for="password">Enter Password</label>
+    <input
+      class="form-control"
+      type="password"
+      id="password"
+      name="password"
+      required
+    />
+    <div class="valid-feedback">looks good</div>
+    <div class="invalid-feedback">Not good</div>
+  </div>
+  <div class="mb-3">
+    <button class="btn btn-success">Register</button>
+  </div>
+</form>
